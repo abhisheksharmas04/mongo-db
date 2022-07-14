@@ -1,0 +1,21 @@
+Special Type in MongoDB
+	a) java.util.List type properties.
+	b) java.util.Set type properties.
+	c) array type properties.
+	d) java.util.Map type properties
+	e) java.util.Properties type properties
+	g) HAS-A properties (Non-Collection type)
+			|-> For One-One and Many To One
+	h)HAS-A properties (Collection type)
+			|-> For Many To One & Many To Many association
+			
+In mongo db array/list/set properties will be treated as same properties
+	[{....}, {....}, {...}]
+In mongo db Map, Properties will be treated as same properties:
+	{key1:{...}, key2:{}}
+	
+NOTE:: Array/Collection can hold simple/wrapper values as part of Entity/Document Object (Collection Mapping in JPA
+/special type mapping in mongo)
+
+NOTE:: Array/Collection can hold associated  Entity/Document Object as part of Association
+Mapping/ Special type mapping
