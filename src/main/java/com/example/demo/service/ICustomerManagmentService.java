@@ -5,7 +5,6 @@ import java.util.List;
 import com.example.demo.document.Customer;
 
 public interface ICustomerManagmentService {
-	public String registerCustomer(Customer customer);
-	public List<Customer>findAllCustomers();
-	public String removeCustomer(String id);
+	public List<Customer>fetchCustomerByBillAmtRange(double start, double end);
+	public List<Customer>fetchCustomersByUsingCaddAndHavingMobileNo(String...address);
 }
