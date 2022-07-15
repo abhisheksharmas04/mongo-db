@@ -19,3 +19,32 @@ NOTE:: Array/Collection can hold simple/wrapper values as part of Entity/Documen
 
 NOTE:: Array/Collection can hold associated  Entity/Document Object as part of Association
 Mapping/ Special type mapping
+---------------------------------------------------------------------------------------------------------------------
+Many to Many Association: 
+	We can take List or Map Collection type properties as the HAS-A properties in the Document to build One to Many or
+	Many to many association.
+	
+	if the has a properties type is list or set collection then the document looks like:
+		{
+			id: ..
+			...
+			... // Parent property
+			Has A property: [
+								{....} {...}
+							]
+		}
+	if the has a propertie type is Map collection then the document looks like this:
+		{
+			id: ..
+			....
+			...
+			..
+			Has A property:{
+				{.....}
+				{......}
+			}
+		}
+		
+		One person can have multiple visa (one to many), One Person can have multiple vehicles
+		
+		One Document can have multiple has a properties representing multiple types of associations with child documents
